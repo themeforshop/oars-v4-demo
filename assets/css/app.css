@@ -642,28 +642,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e49aa5', end
 }
 
 .featuresTheme-layout{
-padding-top: 0 !important;
+	padding-top: 0 !important;
 }
 .featuresTheme-layout .cell{
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;		
--webkit-flex-wrap: nowrap;
--moz-flex-wrap: nowrap;
--ms-flex-wrap: nowrap;
-flex-wrap: nowrap;
-justify-content: center;
--webkit-justify-content: center;
--moz-justify-content: center;
--ms-justify-content: center;	
-width: 100%;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;		
+	-webkit-flex-wrap: nowrap;
+	-moz-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	justify-content: center;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;	
+	width: 100%;
 }
 .featuresTheme-layout figure{
-position: relative;	
-padding: 70px;	
-}
-.featuresTheme-layout .cell:last-child figure{
-padding-bottom: 0;
+	position: relative;	
+	padding: 70px;	
 }
 .featuresTheme-layout figure figcaption{	
 position: absolute;	
@@ -704,18 +701,10 @@ align-items: center;
 -webkit-transform: translateX(30px);
 transform: translateX(30px); 
 }
-.featuresTheme-layout .cell:nth-child(1) figure:nth-child(1) figcaption{
-margin-top: 50px;
-}
-.featuresTheme-layout .cell:nth-child(3) figure:nth-child(1) figcaption,
-.featuresTheme-layout .cell:nth-child(1) figure:nth-child(2) figcaption{
-top: auto;
-bottom: 70px;
-margin-bottom: 50px;
-}
-.featuresTheme-layout .cell:nth-child(3) figure:nth-child(2),
-.featuresTheme-layout .cell:nth-child(2) figure:nth-child(2){	
-margin-top: -140px;
+.featuresTheme-layout .cell figure:nth-child(2) figcaption{
+	top: auto;
+	bottom: 70px;
+	margin-bottom: 50px;
 }
 .newsletter-layout figure{
 text-align: right;
@@ -1030,7 +1019,6 @@ body{ overflow-x: hidden; }
 	width: 30%; 
 	text-align: center;
 	padding: 15px;
-	margin-top: 70px;
 	transition: all 300ms ease; 
 	-ms-transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
@@ -1188,4 +1176,18 @@ body{ overflow-x: hidden; }
 .slick-slider figure .homeimage{
 	border: 1px solid #ddd;
 	display: block;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.copyright{
+	margin-top: 40px;
+}
+
+
+@media screen and (max-width: 540px){
+	.copyright{
+		margin-top: 20px;
+		font-size: 16px;
+	}
 }
